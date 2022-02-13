@@ -46,7 +46,8 @@ class ExerciseJSONStore(private val context: Context) : ExerciseStore {
         var foundExercise: ExerciseModel? = exercisesList.find { p -> p.id == exercise.id }
         if (foundExercise != null) {
             foundExercise.title = exercise.title
-            foundExercise.description = exercise.description
+            foundExercise.set = exercise.set
+            foundExercise.duration = exercise.duration
             foundExercise.image = exercise.image
         }
         serialize()

@@ -23,7 +23,6 @@ class ParolymplusActivity : AppCompatActivity() {
     var exercise = ExerciseModel()
     lateinit var app: MainApp
     private lateinit var imageIntentLauncher : ActivityResultLauncher<Intent>
-    val IMAGE_REQUEST = 1
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -43,7 +42,8 @@ class ParolymplusActivity : AppCompatActivity() {
             edit = true
             exercise = intent.extras?.getParcelable("exercise_edit")!!
             binding.exerciseTitle.setText(exercise.title)
-            binding.description.setText(exercise.description)
+            binding.exerciseSet.setText(exercise.set)
+            binding.exerciseDuration.setText(exercise.duration)
             binding.btnAdd.setText(R.string.save_exercise)
             Picasso.get()
                 .load(exercise.image)
@@ -55,7 +55,8 @@ class ParolymplusActivity : AppCompatActivity() {
 
         binding.btnAdd.setOnClickListener() {
             exercise.title = binding.exerciseTitle.text.toString()
-            exercise.description = binding.description.text.toString()
+            exercise.set = binding.exerciseSet.text.toString()
+            exercise.duration = binding.exerciseDuration.text.toString()
             if (exercise.title.isEmpty()) {
                 Snackbar.make(it,R.string.enter_exercise_title, Snackbar.LENGTH_LONG)
                     .show()

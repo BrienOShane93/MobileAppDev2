@@ -2,7 +2,8 @@
     <string name="app_name">Parolymplus</string>
     <string name="button_addExercise">Add Exercise</string>
     <string name="hint_Title">Exercise Title</string>
-    <string name="hint_Description">Description </string>
+    <string name="hint_Set">Exercise Set </string>
+    <string name="hint_Duration">Exercise  </string>
     <string name="menu_addExercise">Add</string>
     <string name="menu_cancelExercise">Cancel</string>
     <string name="enter_exercise_title"> Please enter a Exercise Title </string>
