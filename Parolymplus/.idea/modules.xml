@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Parolymplus.iml" filepath="$PROJECT_DIR$/.idea/modules/Parolymplus.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Parolymplus.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Parolymplus.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/parolymplus.iml" filepath="$PROJECT_DIR$/.idea/modules/parolymplus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/parolymplus.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/parolymplus.app.iml" />
     </modules>
   </component>
 </project>
