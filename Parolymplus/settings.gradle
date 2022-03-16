@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "parolymplus"
+rootProject.name = "Parolymplus"
 include ':app'

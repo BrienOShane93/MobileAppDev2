@@ -1,5 +1,16 @@
 <resources>
     <string name="app_name">Parolymplus</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_form">Form</string>
+    <string name="menu_list">List</string>
+    <string name="menu_detail">Detail</string>
+
     <string name="button_addExercise">Add Exercise</string>
     <string name="hint_Title">Exercise Title</string>
     <string name="hint_Set">Exercise Set </string>

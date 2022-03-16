@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_form">
+
+    <fragment
+        android:id="@+id/nav_form"
+        android:name="ie.wit.parolymplus.ui.form.FormFragment"
+        android:label="@string/menu_form"
+        tools:layout="@layout/fragment_form" />
+
+    <fragment
+        android:id="@+id/nav_list"
+        android:name="ie.wit.parolymplus.ui.list.ListFragment"
+        android:label="@string/menu_list"
+        tools:layout="@layout/fragment_list" />
+
+    <fragment
+        android:id="@+id/nav_detail"
+        android:name="ie.wit.parolymplus.ui.detail.DetailFragment"
+        android:label="@string/menu_detail"
+        tools:layout="@layout/fragment_detail" />
+</navigation>
