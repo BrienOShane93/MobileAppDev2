@@ -3,23 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_form">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="ie.wit.parolymplus.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/nav_form"
+        android:name="ie.wit.parolymplus.ui.form.FormFragment"
+        android:label="@string/menu_form"
+        tools:layout="@layout/fragment_form" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="ie.wit.parolymplus.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_list"
+        android:name="ie.wit.parolymplus.ui.list.ListFragment"
+        android:label="@string/menu_list"
+        tools:layout="@layout/fragment_list" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="ie.wit.parolymplus.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_detail"
+        android:name="ie.wit.parolymplus.ui.detail.DetailFragment"
+        android:label="@string/menu_detail"
+        tools:layout="@layout/fragment_detail" />
 </navigation>

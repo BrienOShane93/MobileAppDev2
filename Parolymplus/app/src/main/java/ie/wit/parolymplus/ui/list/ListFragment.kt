@@ -1,4 +1,4 @@
-package ie.wit.parolymplus.ui.slideshow
+package ie.wit.parolymplus.ui.list
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,11 +7,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import ie.wit.parolymplus.databinding.FragmentSlideshowBinding
+import ie.wit.parolymplus.databinding.FragmentListBinding
 
-class SlideshowFragment : Fragment() {
+class ListFragment : Fragment() {
 
-    private var _binding: FragmentSlideshowBinding? = null
+    private var _binding: FragmentListBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -22,14 +22,14 @@ class SlideshowFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val slideshowViewModel =
-            ViewModelProvider(this).get(SlideshowViewModel::class.java)
+        val listViewModel =
+            ViewModelProvider(this).get(ListViewModel::class.java)
 
-        _binding = FragmentSlideshowBinding.inflate(inflater, container, false)
+        _binding = FragmentListBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textSlideshow
-        slideshowViewModel.text.observe(viewLifecycleOwner) {
+        val textView: TextView = binding.textList
+        listViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
         return root

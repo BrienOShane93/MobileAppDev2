@@ -5,45 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8358c656-55a7-4135-8184-7292ffc8d58b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/CritHitCafe/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritHitCafe/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritHitCafe/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritHitCafe/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritHitCafe/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritHitCafe/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritHitCafe/app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritHitCafe/app/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritHitCafe/app/proguard-rules.pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritHitCafe/app/src/androidTest/java/ie/wit/crithitcafe/ExampleInstrumentedTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritHitCafe/app/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritHitCafe/app/src/main/java/ie/wit/crithitcafe/MainActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritHitCafe/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritHitCafe/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritHitCafe/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritHitCafe/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritHitCafe/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritHitCafe/app/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritHitCafe/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritHitCafe/app/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritHitCafe/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritHitCafe/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritHitCafe/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritHitCafe/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritHitCafe/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritHitCafe/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritHitCafe/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritHitCafe/app/src/main/res/values-night/themes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritHitCafe/app/src/main/res/values/colors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritHitCafe/app/src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritHitCafe/app/src/main/res/values/themes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritHitCafe/app/src/test/java/ie/wit/crithitcafe/ExampleUnitTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritHitCafe/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritHitCafe/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritHitCafe/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritHitCafe/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritHitCafe/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritHitCafe/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CritHitCafe/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parolymplus/.gradle/7.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Parolymplus/.gradle/7.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parolymplus/.gradle/7.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Parolymplus/.gradle/7.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parolymplus/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Parolymplus/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parolymplus/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Parolymplus/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parolymplus/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Parolymplus/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parolymplus/app/src/main/java/ie/wit/parolymplus/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Parolymplus/app/src/main/java/ie/wit/parolymplus/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parolymplus/app/src/main/java/ie/wit/parolymplus/ui/gallery/GalleryFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Parolymplus/app/src/main/java/ie/wit/parolymplus/ui/list/ListFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parolymplus/app/src/main/java/ie/wit/parolymplus/ui/gallery/GalleryViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Parolymplus/app/src/main/java/ie/wit/parolymplus/ui/list/ListViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parolymplus/app/src/main/java/ie/wit/parolymplus/ui/home/HomeFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Parolymplus/app/src/main/java/ie/wit/parolymplus/ui/form/FormFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parolymplus/app/src/main/java/ie/wit/parolymplus/ui/home/HomeViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Parolymplus/app/src/main/java/ie/wit/parolymplus/ui/form/FormViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parolymplus/app/src/main/java/ie/wit/parolymplus/ui/slideshow/SlideshowFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Parolymplus/app/src/main/java/ie/wit/parolymplus/ui/detail/DetailFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parolymplus/app/src/main/java/ie/wit/parolymplus/ui/slideshow/SlideshowViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Parolymplus/app/src/main/java/ie/wit/parolymplus/ui/detail/DetailViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parolymplus/app/src/main/res/layout/fragment_gallery.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Parolymplus/app/src/main/res/layout/fragment_list.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parolymplus/app/src/main/res/layout/fragment_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Parolymplus/app/src/main/res/layout/fragment_form.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parolymplus/app/src/main/res/layout/fragment_slideshow.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Parolymplus/app/src/main/res/layout/fragment_detail.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parolymplus/app/src/main/res/menu/activity_main_drawer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Parolymplus/app/src/main/res/menu/activity_main_drawer.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parolymplus/app/src/main/res/navigation/mobile_navigation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Parolymplus/app/src/main/res/navigation/mobile_navigation.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parolymplus/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Parolymplus/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
