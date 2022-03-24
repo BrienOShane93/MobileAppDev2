@@ -13,8 +13,8 @@
 
     <string name="button_addExercise">Add Exercise</string>
     <string name="hint_Title">Exercise Title</string>
-    <string name="hint_Set">Exercise Set </string>
-    <string name="hint_Duration">Exercise  </string>
+    <string name="hint_Set">Exercise Set</string>
+    <string name="hint_Duration">Exercise Duration</string>
     <string name="menu_addExercise">Add</string>
     <string name="menu_cancelExercise">Cancel</string>
     <string name="enter_exercise_title"> Please enter a Exercise Title </string>
@@ -23,4 +23,16 @@
     <string name="select_exercise_image">Select exercise image</string>
     <string name="change_exercise_image">Change exercise image</string>
     <string name="menu_deleteExercise">Delete</string>
+
+    <string name="action_form">Form</string>
+    <string name="action_list">List</string>
+    <string name="total_donated">$%d</string>
+
+    <string name="exercisesNotFound">No Exercises Yet...\nGo Make an Exercise!</string>
+    <string name="exerciseError">Error : Couldn\'t Make an Exercise...</string>
+
+    <string name="ExerciseDetails">Exercise Details</string>
+    <string name="title">Title :</string>
+    <string name="set">Set :</string>
+    <string name="duration">Duration :</string>
 </resources>
