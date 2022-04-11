@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "408540281918-gbd3md9m54o53s1pbsbcck4smtgl3u7f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ie.wit.parolymplus",
+            "certificate_hash": "7ee0fe760c7d5ec42e282bac469c724a3132ac8b"
+          }
+        },
+        {
           "client_id": "408540281918-q2gkm6mgl2dlgh52a6c40g7vov7fgukf.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -28,7 +36,7 @@
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "408540281918-q2gkm6mgl2dlgh52a6c40g7vov7fgukf.apps.googleusercontent.com",
+              "client_id": "408540281918-k8f0f98qe6c5sb3t8ku2hoq8jnccj24p.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

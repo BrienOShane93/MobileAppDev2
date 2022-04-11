@@ -7,4 +7,10 @@
         android:orderInCategory="100"
         android:title="@string/action_form"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/toggleDonations"
+        android:title=""
+        app:actionLayout="@layout/toggle_button"
+        app:showAsAction="always" />
 </menu>

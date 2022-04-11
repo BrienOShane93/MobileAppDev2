@@ -11,7 +11,25 @@ var database: DatabaseReference = FirebaseDatabase.getInstance().reference
 
 object FirebaseDBManager : ExerciseStore {
     override fun findAll(exercisesList: MutableLiveData<List<ExerciseModel>>) {
-        TODO("Not yet implemented")
+        database.child("exercises")
+            .addValueEventListener(object : ValueEventListener {
+                override fun onCancelled(error: DatabaseError) {
+                    Timber.i("Firebase Exercise error : ${error.message}")
+                }
+
+                override fun onDataChange(snapshot: DataSnapshot) {
+                    val localList = ArrayList<ExerciseModel>()
+                    val children = snapshot.children
+                    children.forEach {
+                        val exercise = it.getValue(ExerciseModel::class.java)
+                        localList.add(exercise!!)
+                    }
+                    database.child("exercises")
+                        .removeEventListener(this)
+
+                    exercisesList.value = localList
+                }
+            })
     }
 
     override fun findAll(userid: String, exercisesList: MutableLiveData<List<ExerciseModel>>) {

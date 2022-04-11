@@ -20,10 +20,13 @@ class ListViewModel : ViewModel() {
 
     var liveFirebaseUser = MutableLiveData<FirebaseUser>()
 
+    var readOnly = MutableLiveData(false)
+
     init { load() }
 
     fun load() {
         try {
+            readOnly.value = false
             //ExerciseManager.findAll(liveFirebaseUser.value?.email!!, ExercisesList)
             FirebaseDBManager.findAll(liveFirebaseUser.value?.uid!!,
                 exercisesList)
@@ -31,6 +34,17 @@ class ListViewModel : ViewModel() {
         }
         catch (e: Exception) {
             Timber.i("Report Load Error : $e.message")
+        }
+    }
+
+    fun loadAll() {
+        try {
+            readOnly.value = true
+            FirebaseDBManager.findAll(exercisesList)
+            Timber.i("List LoadAll Success : ${exercisesList.value.toString()}")
+        }
+        catch (e: Exception) {
+            Timber.i("List LoadAll Error : $e.message")
         }
     }
 

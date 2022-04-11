@@ -4,6 +4,7 @@ import android.app.AlertDialog
 import android.os.Bundle
 import android.view.*
 import android.widget.Toast
+import androidx.appcompat.widget.SwitchCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Observer
@@ -89,6 +90,17 @@ class ListFragment : Fragment(), ExerciseClickListener {
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         inflater.inflate(R.menu.menu_list, menu)
+
+        val item = menu.findItem(R.id.toggleDonations) as MenuItem
+        item.setActionView(R.layout.toggle_button)
+        val toggleExercises: SwitchCompat = item.actionView.findViewById(R.id.toggleButton)
+        toggleExercises.isChecked = false
+
+        toggleExercises.setOnCheckedChangeListener { buttonView, isChecked ->
+            if (isChecked) listViewModel.loadAll()
+            else listViewModel.load()
+        }
+
         super.onCreateOptionsMenu(menu, inflater)
     }
 
@@ -98,7 +110,7 @@ class ListFragment : Fragment(), ExerciseClickListener {
     }
 
     private fun render(exercisesList: ArrayList<ExerciseModel>) {
-        fragBinding.recyclerView.adapter = ExerciseAdapter(exercisesList,this)
+        fragBinding.recyclerView.adapter = ExerciseAdapter(exercisesList,this, listViewModel.readOnly.value!!)
         if (exercisesList.isEmpty()) {
             fragBinding.recyclerView.visibility = View.GONE
             fragBinding.exercisesNotFound.visibility = View.VISIBLE
@@ -110,14 +122,18 @@ class ListFragment : Fragment(), ExerciseClickListener {
 
     override fun onExerciseClick(exercise: ExerciseModel) {
         val action = ListFragmentDirections.actionListFragmentToDetailFragment(exercise.uid!!)
-        findNavController().navigate(action)
+        if(!listViewModel.readOnly.value!!)
+            findNavController().navigate(action)
     }
 
     private fun setSwipeRefresh() {
         fragBinding.swiperefresh.setOnRefreshListener {
             fragBinding.swiperefresh.isRefreshing = true
             showLoader(loader,"Downloading Donations")
-            listViewModel.load()
+            if(listViewModel.readOnly.value!!)
+                listViewModel.loadAll()
+            else
+                listViewModel.load()
         }
     }
 
