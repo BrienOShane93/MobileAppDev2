@@ -3,9 +3,32 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../Parolymplus/app/src/main/res/drawable-v24/ic_swipe_delete.xml" value="0.173" />
+        <entry key="../Parolymplus/app/src/main/res/drawable-v24/ic_swipe_edit.xml" value="0.173" />
+        <entry key="../Parolymplus/app/src/main/res/drawable/ic_launcher_background.xml" value="0.173" />
+        <entry key="../Parolymplus/app/src/main/res/drawable/side_nav_bar.xml" value="0.173" />
+        <entry key="../Parolymplus/app/src/main/res/layout/activity_main.xml" value="0.11594202898550725" />
+        <entry key="../Parolymplus/app/src/main/res/layout/app_bar_home.xml" value="0.16033434650455927" />
+        <entry key="../Parolymplus/app/src/main/res/layout/app_bar_main.xml" value="0.11594202898550725" />
+        <entry key="../Parolymplus/app/src/main/res/layout/card_donation.xml" value="0.3296875" />
         <entry key="../Parolymplus/app/src/main/res/layout/card_exercise.xml" value="0.4155844155844156" />
+        <entry key="../Parolymplus/app/src/main/res/layout/content_home.xml" value="0.3296875" />
+        <entry key="../Parolymplus/app/src/main/res/layout/content_main.xml" value="0.11594202898550725" />
+        <entry key="../Parolymplus/app/src/main/res/layout/fragment_about.xml" value="0.3296875" />
         <entry key="../Parolymplus/app/src/main/res/layout/fragment_detail.xml" value="0.1517745245070684" />
+        <entry key="../Parolymplus/app/src/main/res/layout/fragment_donate.xml" value="0.3296875" />
+        <entry key="../Parolymplus/app/src/main/res/layout/fragment_donation_detail.xml" value="0.3296875" />
         <entry key="../Parolymplus/app/src/main/res/layout/fragment_form.xml" value="0.1" />
+        <entry key="../Parolymplus/app/src/main/res/layout/fragment_report.xml" value="0.3296875" />
+        <entry key="../Parolymplus/app/src/main/res/layout/home.xml" value="0.11594202898550725" />
+        <entry key="../Parolymplus/app/src/main/res/layout/loading.xml" value="0.1" />
+        <entry key="../Parolymplus/app/src/main/res/layout/login.xml" value="0.21413574218750003" />
+        <entry key="../Parolymplus/app/src/main/res/layout/nav_header.xml" value="0.1640625" />
+        <entry key="../Parolymplus/app/src/main/res/layout/nav_header_main.xml" value="0.25679896257925716" />
+        <entry key="../Parolymplus/app/src/main/res/menu/activity_main_drawer.xml" value="0.1640625" />
+        <entry key="../Parolymplus/app/src/main/res/menu/menu_donate.xml" value="0.1640625" />
+        <entry key="../Parolymplus/app/src/main/res/menu/menu_list.xml" value="0.1640625" />
+        <entry key="../Parolymplus/app/src/main/res/menu/nav_drawer_menu.xml" value="0.1640625" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.11594202898550725" />
         <entry key="app/src/main/res/layout/app_bar_main.xml" value="0.11594202898550725" />
         <entry key="app/src/main/res/layout/card_exercise.xml" value="0.11594202898550725" />
@@ -20,6 +43,7 @@
       </map>
     </option>
   </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

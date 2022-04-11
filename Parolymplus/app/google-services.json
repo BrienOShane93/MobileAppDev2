@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "408540281918",
+    "firebase_url": "https://parolymplus-648d3-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "parolymplus-648d3",
+    "storage_bucket": "parolymplus-648d3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:408540281918:android:d2172d0009d6647339656f",
+        "android_client_info": {
+          "package_name": "ie.wit.parolymplus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "408540281918-q2gkm6mgl2dlgh52a6c40g7vov7fgukf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHxE3v7fn5hhGDodjPsVfHv_2o6MBRFtQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "408540281918-q2gkm6mgl2dlgh52a6c40g7vov7fgukf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
