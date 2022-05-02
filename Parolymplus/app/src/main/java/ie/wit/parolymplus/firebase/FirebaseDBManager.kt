@@ -104,25 +104,4 @@ object FirebaseDBManager : ExerciseStore {
 
         database.updateChildren(childUpdate)
     }
-
-    fun updateImageRef(userid: String,imageUri: String) {
-
-        val userExercises = database.child("user-exercises").child(userid)
-        val allExercises = database.child("exercises")
-
-        userExercises.addListenerForSingleValueEvent(
-            object : ValueEventListener {
-                override fun onCancelled(error: DatabaseError) {}
-                override fun onDataChange(snapshot: DataSnapshot) {
-                    snapshot.children.forEach {
-                        //Update Users imageUri
-                        it.ref.child("profilepic").setValue(imageUri)
-                        //Update all donations that match 'it'
-                        val exercise = it.getValue(ExerciseModel::class.java)
-                        allExercises.child(exercise!!.uid!!)
-                            .child("profilepic").setValue(imageUri)
-                    }
-                }
-            })
-    }
 }

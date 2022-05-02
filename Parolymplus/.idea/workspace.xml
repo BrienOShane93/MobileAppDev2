@@ -13,20 +13,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="050d0b05-8024-4e2f-8fdf-c67a92747e29" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/ie/wit/parolymplus/firebase/FirebaseImageManager.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/toggle_button.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/app/Parolymplus.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/Parolymplus.app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/google-services.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/google-services.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ie/wit/parolymplus/adapters/ExerciseAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ie/wit/parolymplus/adapters/ExerciseAdapter.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/ie/wit/parolymplus/firebase/FirebaseAuthManager.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ie/wit/parolymplus/firebase/FirebaseAuthManager.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/ie/wit/parolymplus/firebase/FirebaseDBManager.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ie/wit/parolymplus/firebase/FirebaseDBManager.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ie/wit/parolymplus/ui/auth/Login.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ie/wit/parolymplus/ui/auth/Login.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ie/wit/parolymplus/ui/auth/LoginRegisterViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ie/wit/parolymplus/ui/auth/LoginRegisterViewModel.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/ie/wit/parolymplus/ui/home/Home.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ie/wit/parolymplus/ui/home/Home.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ie/wit/parolymplus/ui/list/ListFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ie/wit/parolymplus/ui/list/ListFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ie/wit/parolymplus/ui/list/ListViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ie/wit/parolymplus/ui/list/ListViewModel.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/ie/wit/parolymplus/utils/Helpers.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ie/wit/parolymplus/utils/Helpers.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ie/wit/parolymplus/utils/SwipToEditCallback.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ie/wit/parolymplus/utils/SwipToEditCallback.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ie/wit/parolymplus/utils/SwipeToDeleteCallback.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ie/wit/parolymplus/utils/SwipeToDeleteCallback.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/login.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_list.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,16 +83,13 @@
         <option value="Kotlin Interface" />
         <option value="Kotlin File" />
         <option value="Kotlin Class" />
-        <option value="layoutResourceFile" />
         <option value="Kotlin Object" />
+        <option value="layoutResourceFile" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="ProblemsViewState">
-    <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="26TikZy6mPCkgXYJzUyp82UgYqk" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
