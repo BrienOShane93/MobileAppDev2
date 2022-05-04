@@ -5,10 +5,11 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.google.firebase.auth.FirebaseUser
 import ie.wit.parolymplus.firebase.FirebaseDBManager
-import ie.wit.parolymplus.models.ExerciseManager
 import ie.wit.parolymplus.models.ExerciseModel
 import timber.log.Timber
 import java.lang.Exception
+import java.util.*
+import kotlin.collections.ArrayList
 
 class ListViewModel : ViewModel() {
 
@@ -22,18 +23,19 @@ class ListViewModel : ViewModel() {
 
     var readOnly = MutableLiveData(false)
 
+    var searchResults = ArrayList<ExerciseModel>()
+
     init { load() }
 
     fun load() {
         try {
             readOnly.value = false
-            //ExerciseManager.findAll(liveFirebaseUser.value?.email!!, ExercisesList)
             FirebaseDBManager.findAll(liveFirebaseUser.value?.uid!!,
                 exercisesList)
-            Timber.i("Report Load Success : ${exercisesList.value.toString()}")
+            Timber.i("List Load Success : ${exercisesList.value.toString()}")
         }
         catch (e: Exception) {
-            Timber.i("Report Load Error : $e.message")
+            Timber.i("List Load Error : $e.message")
         }
     }
 
@@ -50,13 +52,11 @@ class ListViewModel : ViewModel() {
 
     fun delete(userid: String, id: String) {
         try {
-            //DonationManager.delete(userid,id)
             FirebaseDBManager.delete(userid,id)
-            Timber.i("Report Delete Success")
+            Timber.i("List Delete Success")
         }
         catch (e: Exception) {
-            Timber.i("Report Delete Error : $e.message")
+            Timber.i("List Delete Error : $e.message")
         }
     }
 }
-

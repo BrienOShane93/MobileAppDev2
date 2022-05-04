@@ -10,7 +10,7 @@ class MainApp : Application() {
     override fun onCreate() {
         super.onCreate()
         Timber.plant(Timber.DebugTree())
-      //  exercisesStore = ExerciseManager()
+        //  exercisesStore = ExerciseManager()
         Timber.i("Parolymplus Application Started")
     }
 }

@@ -10,9 +10,8 @@ interface ExerciseStore {
                 exercisesList:
                 MutableLiveData<List<ExerciseModel>>)
     fun findById(userid:String, exerciseid: String,
-                 exercise: MutableLiveData<ExerciseModel>)
+                 donation: MutableLiveData<ExerciseModel>)
     fun create(firebaseUser: MutableLiveData<FirebaseUser>, exercise: ExerciseModel)
     fun delete(userid:String, exerciseid: String)
     fun update(userid:String, exerciseid: String, exercise: ExerciseModel)
 }
-

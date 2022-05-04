@@ -5,13 +5,11 @@ import android.net.Uri
 import android.os.Bundle
 import android.view.MenuItem
 import android.view.View
-import android.widget.Toast
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.drawerlayout.widget.DrawerLayout
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
@@ -23,8 +21,11 @@ import com.google.firebase.auth.FirebaseUser
 import ie.wit.parolymplus.R
 import ie.wit.parolymplus.databinding.HomeBinding
 import ie.wit.parolymplus.databinding.NavHeaderBinding
+import ie.wit.parolymplus.firebase.FirebaseImageManager
 import ie.wit.parolymplus.ui.auth.LoggedInViewModel
 import ie.wit.parolymplus.ui.auth.Login
+import ie.wit.parolymplus.utils.readImageUri
+import ie.wit.parolymplus.utils.showImagePicker
 import timber.log.Timber
 
 class Home : AppCompatActivity() {
@@ -82,7 +83,7 @@ class Home : AppCompatActivity() {
     }
 
     private fun initNavHeader() {
-        Timber.i("DX Init Nav Header")
+        Timber.i("Parolymplus Init Nav Header")
         headerView = homeBinding.navView.getHeaderView(0)
         navHeaderBinding = NavHeaderBinding.bind(headerView)
 
@@ -94,7 +95,7 @@ class Home : AppCompatActivity() {
     private fun updateNavHeader(currentUser: FirebaseUser) {
         FirebaseImageManager.imageUri.observe(this, { result ->
             if(result == Uri.EMPTY) {
-                Timber.i("DX NO Existing imageUri")
+                Timber.i("Parolymplus NO Existing imageUri")
                 if (currentUser.photoUrl != null) {
                     //if you're a google user
                     FirebaseImageManager.updateUserImage(
@@ -105,7 +106,7 @@ class Home : AppCompatActivity() {
                 }
                 else
                 {
-                    Timber.i("DX Loading Existing Default imageUri")
+                    Timber.i("Parolymplus Loading Existing Default imageUri")
                     FirebaseImageManager.updateDefaultImage(
                         currentUser.uid,
                         R.drawable.logo,
@@ -114,7 +115,7 @@ class Home : AppCompatActivity() {
             }
             else // load existing image from firebase
             {
-                Timber.i("DX Loading Existing imageUri")
+                Timber.i("Parolymplus Loading Existing imageUri")
                 FirebaseImageManager.updateUserImage(
                     currentUser.uid,
                     FirebaseImageManager.imageUri.value,
@@ -144,7 +145,7 @@ class Home : AppCompatActivity() {
                 when(result.resultCode){
                     RESULT_OK -> {
                         if (result.data != null) {
-                            Timber.i("DX registerPickerCallback() ${readImageUri(result.resultCode, result.data).toString()}")
+                            Timber.i("Parolymplus registerPickerCallback() ${readImageUri(result.resultCode, result.data).toString()}")
                             FirebaseImageManager
                                 .updateUserImage(loggedInViewModel.liveFirebaseUser.value!!.uid,
                                     readImageUri(result.resultCode, result.data),

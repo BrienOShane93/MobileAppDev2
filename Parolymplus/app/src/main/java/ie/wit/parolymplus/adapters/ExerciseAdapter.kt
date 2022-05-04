@@ -1,11 +1,17 @@
 package ie.wit.parolymplus.adapters
 
+import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.core.net.toUri
 import androidx.recyclerview.widget.RecyclerView
+import com.makeramen.roundedimageview.RoundedTransformationBuilder
+import com.squareup.picasso.MemoryPolicy
+import com.squareup.picasso.Picasso
 import ie.wit.parolymplus.R
 import ie.wit.parolymplus.databinding.CardExerciseBinding
 import ie.wit.parolymplus.models.ExerciseModel
+import ie.wit.parolymplus.utils.customTransformation
 
 interface ExerciseClickListener {
     fun onExerciseClick(exercise: ExerciseModel)
@@ -43,7 +49,13 @@ class ExerciseAdapter constructor(private var exercises: ArrayList<ExerciseModel
         fun bind(exercise: ExerciseModel, listener: ExerciseClickListener) {
             binding.root.tag = exercise
             binding.exercise = exercise
-            binding.imageIcon.setImageResource(R.mipmap.ic_launcher_round)
+
+            Picasso.get().load(exercise.profilepic.toUri())
+                .resize(200, 200)
+                .transform(customTransformation())
+                .centerCrop()
+                .memoryPolicy(MemoryPolicy.NO_CACHE)
+                .into(binding.imageIcon)
             binding.root.setOnClickListener { listener.onExerciseClick(exercise) }
             binding.executePendingBindings()
         }

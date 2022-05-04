@@ -7,9 +7,10 @@ import ie.wit.parolymplus.models.ExerciseModel
 import ie.wit.parolymplus.models.ExerciseStore
 import timber.log.Timber
 
-var database: DatabaseReference = FirebaseDatabase.getInstance().reference
-
 object FirebaseDBManager : ExerciseStore {
+
+    var database: DatabaseReference = FirebaseDatabase.getInstance().reference
+
     override fun findAll(exercisesList: MutableLiveData<List<ExerciseModel>>) {
         database.child("exercises")
             .addValueEventListener(object : ValueEventListener {
@@ -103,5 +104,26 @@ object FirebaseDBManager : ExerciseStore {
         childUpdate["user-exercises/$userid/$exerciseid"] = exerciseValues
 
         database.updateChildren(childUpdate)
+    }
+
+    fun updateImageRef(userid: String,imageUri: String) {
+
+        val userExercises = database.child("user-exercises").child(userid)
+        val allExercises = database.child("exercises")
+
+        userExercises.addListenerForSingleValueEvent(
+            object : ValueEventListener {
+                override fun onCancelled(error: DatabaseError) {}
+                override fun onDataChange(snapshot: DataSnapshot) {
+                    snapshot.children.forEach {
+                        //Update Users imageUri
+                        it.ref.child("profilepic").setValue(imageUri)
+                        //Update all exercises that match 'it'
+                        val exercise = it.getValue(ExerciseModel::class.java)
+                        allExercises.child(exercise!!.uid!!)
+                            .child("profilepic").setValue(imageUri)
+                    }
+                }
+            })
     }
 }

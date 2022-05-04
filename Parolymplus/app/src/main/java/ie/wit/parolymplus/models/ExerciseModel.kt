@@ -1,6 +1,5 @@
 package ie.wit.parolymplus.models
 
-import android.net.Uri
 import android.os.Parcelable
 import com.google.firebase.database.Exclude
 import com.google.firebase.database.IgnoreExtraProperties
@@ -13,7 +12,7 @@ data class ExerciseModel(
         var title: String = "",
         var set: String = "",
         var duration: String = "",
-        var image: Uri = Uri.EMPTY,
+        var profilepic: String = "",
         val email: String = "")
         : Parcelable
 {
@@ -24,7 +23,7 @@ data class ExerciseModel(
                         "title" to title,
                         "set" to set,
                         "duration" to duration,
-                        "image" to image,
+                        "profilepic" to profilepic,
                         "email" to email
                 )
         }

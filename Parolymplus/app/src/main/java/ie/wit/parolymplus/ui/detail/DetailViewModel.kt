@@ -4,7 +4,6 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import ie.wit.parolymplus.firebase.FirebaseDBManager
-import ie.wit.parolymplus.models.ExerciseManager
 import ie.wit.parolymplus.models.ExerciseModel
 import timber.log.Timber
 import java.lang.Exception
@@ -13,18 +12,8 @@ class DetailViewModel : ViewModel() {
     private val exercise = MutableLiveData<ExerciseModel>()
 
     var observableExercise: LiveData<ExerciseModel>
-         get() = exercise
-         set(value) {exercise.value = value.value}
-
-
-//    //@InverseMethod("setAmount")
-//    //fun getAmount() : Int {return exercise.value!!.amount  }
-//    //fun setAmount(amount: Int) {exercise.value!!.amount = amount }
-//
-//    fun getMessage() : String { return exercise.value!!.message  }
-//    //@InverseMethod("setMessage")
-//    fun setMessage(message: String) {exercise.value!!.message = message }
-//
+        get() = exercise
+        set(value) {exercise.value = value.value}
 
     fun getExercise(userid:String, id: String) {
         try {
@@ -49,4 +38,3 @@ class DetailViewModel : ViewModel() {
         }
     }
 }
-
