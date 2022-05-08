@@ -12,7 +12,6 @@ import com.google.firebase.auth.GoogleAuthProvider
 import ie.wit.parolymplus.R
 import timber.log.Timber
 
-
 class FirebaseAuthManager(application: Application) {
 
     private var application: Application? = null

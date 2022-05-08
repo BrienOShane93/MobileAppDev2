@@ -79,18 +79,18 @@ object FirebaseImageManager {
                 override fun onBitmapLoaded(bitmap: Bitmap?,
                                             from: Picasso.LoadedFrom?
                 ) {
-                    Timber.i("DX onBitmapLoaded $bitmap")
+                    Timber.i("Parolymplus onBitmapLoaded $bitmap")
                     uploadImageToFirebase(userid, bitmap!!,updating)
                     imageView.setImageBitmap(bitmap)
                 }
 
                 override fun onBitmapFailed(e: java.lang.Exception?,
                                             errorDrawable: Drawable?) {
-                    Timber.i("DX onBitmapFailed $e")
+                    Timber.i("Parolymplus onBitmapFailed $e")
                 }
 
                 override fun onPrepareLoad(placeHolderDrawable: Drawable?) {
-                    Timber.i("DX onPrepareLoad $placeHolderDrawable")
+                    Timber.i("Parolymplus onPrepareLoad $placeHolderDrawable")
                     //uploadImageToFirebase(userid, defaultImageUri.value,updating)
                 }
             })
@@ -106,18 +106,18 @@ object FirebaseImageManager {
                 override fun onBitmapLoaded(bitmap: Bitmap?,
                                             from: Picasso.LoadedFrom?
                 ) {
-                    Timber.i("DX onBitmapLoaded $bitmap")
+                    Timber.i("Parolymplus onBitmapLoaded $bitmap")
                     uploadImageToFirebase(userid, bitmap!!,false)
                     imageView.setImageBitmap(bitmap)
                 }
 
                 override fun onBitmapFailed(e: java.lang.Exception?,
                                             errorDrawable: Drawable?) {
-                    Timber.i("DX onBitmapFailed $e")
+                    Timber.i("Parolymplus onBitmapFailed $e")
                 }
 
                 override fun onPrepareLoad(placeHolderDrawable: Drawable?) {
-                    Timber.i("DX onPrepareLoad $placeHolderDrawable")
+                    Timber.i("Parolymplus onPrepareLoad $placeHolderDrawable")
                     //uploadImageToFirebase(userid, defaultImageUri.value,updating)
                 }
             })

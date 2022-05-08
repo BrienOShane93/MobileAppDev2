@@ -2,7 +2,10 @@ package ie.wit.parolymplus.ui.list
 
 import android.app.AlertDialog
 import android.os.Bundle
+import android.text.TextWatcher
 import android.view.*
+import android.widget.SearchView
+import android.widget.Toast
 import androidx.appcompat.widget.SwitchCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
@@ -20,6 +23,7 @@ import ie.wit.parolymplus.databinding.FragmentListBinding
 import ie.wit.parolymplus.models.ExerciseModel
 import ie.wit.parolymplus.ui.auth.LoggedInViewModel
 import ie.wit.parolymplus.utils.*
+import timber.log.Timber
 
 
 class ListFragment : Fragment(), ExerciseClickListener {
@@ -88,7 +92,7 @@ class ListFragment : Fragment(), ExerciseClickListener {
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         inflater.inflate(R.menu.menu_list, menu)
 
-        val item = menu.findItem(R.id.toggleButton) as MenuItem
+        val item = menu.findItem(R.id.toggleAnimals) as MenuItem
         item.setActionView(R.layout.toggle_button)
         val toggleExercises: SwitchCompat = item.actionView.findViewById(R.id.toggleButton)
         toggleExercises.isChecked = false

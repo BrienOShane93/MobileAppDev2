@@ -9,7 +9,7 @@
         app:showAsAction="never" />
 
     <item
-        android:id="@+id/toggleDonations"
+        android:id="@+id/toggleAnimals"
         android:title=""
         app:actionLayout="@layout/toggle_button"
         app:showAsAction="always" />
